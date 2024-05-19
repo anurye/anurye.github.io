@@ -20,12 +20,10 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Systems Engineer | M.Sc. Student in Robotics
+role: Systems Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Warsaw University of Technology
-    url: https://eng.pw.edu.pl/
   - name: Northvolt
     url: https://northvolt.com/
 
