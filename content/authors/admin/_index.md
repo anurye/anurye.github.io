@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Systems Engineer at Northvolt | M.Sc. Student in Robotics at WUT
+role: Systems Engineer | M.Sc. Student in Robotics
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
