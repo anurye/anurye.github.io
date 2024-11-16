@@ -252,7 +252,6 @@ exclude:
   - _pages/profiles.md
   - _pages/repositories.md
   - _pages/teaching.md
-  - _pages/publications.md
   - _projects/*project.md
   - _posts/
   - _news/announcement_*.md
@@ -322,7 +321,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Nurye]
-  first_name: [Ahmed, Y.]
+  first_name: [Ahmed Yesuf, Ahmed Y.]
 
   style: apa
   locale: en
