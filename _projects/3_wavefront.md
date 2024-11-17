@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Bug2
-description: Reactive control using bug2 algorithm for local obstacle avoidance
-img: assets/img/project_preview/bug2.png
-redirect: https://github.com/anurye/navigation-with-bug2-algorithm
+title: Wavefront
+description: Global path planning with the wavefront algorithm.
+img: assets/img/project_preview/wavefront.png
+redirect: https://github.com/anurye/navigation-with-wavefront-algorithm
 importance: 3
 category: Navigation
 ---
