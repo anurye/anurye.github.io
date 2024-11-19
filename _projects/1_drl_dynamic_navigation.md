@@ -13,7 +13,7 @@ giscus_comments: true
 
 <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 2rem;">
 
-  <a href="assets/pdf/Mobile_Robot_Navigation_in_Dynamic_Environments.pdf" target="_blank" style="text-decoration: none; text-align: center;">
+  <a href="/assets/pdf/Mobile_Robot_Navigation_in_Dynamic_Environments.pdf" target="_blank" style="text-decoration: none; text-align: center;">
     <i class="fas fa-file-pdf fa-3x"></i><br>
     <span>Read Thesis</span>
   </a>
