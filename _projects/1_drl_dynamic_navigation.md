@@ -1,81 +1,114 @@
 ---
 layout: page
 title: Mobile Robot Navigation in Dynamic Environments
-description: Mobile robot navigation using deep reinforcement learning.
+description: Deep Reinforcement Learning for dynamic robot navigation
 img: assets/img/project_preview/msc_thesis.png
-redirect: https://github.com/anurye/Mobile-Robot-Navigation-Using-Deep-Reinforcement-Learning-and-ROS
 importance: 3
 category: Navigation
+giscus_comments: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Author:** Ahmed Yesuf Nurye  
+**Advisor:** [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<div style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 2rem;">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+  <a href="assets/pdf/Mobile_Robot_Navigation_in_Dynamic_Environments.pdf" target="_blank" style="text-decoration: none; text-align: center;">
+    <i class="fas fa-file-pdf fa-3x"></i><br>
+    <span>Read Thesis</span>
+  </a>
+
+  <a href="https://github.com/anurye/Mobile-Robot-Navigation-Using-Deep-Reinforcement-Learning-and-ROS" target="_blank" style="text-decoration: none; text-align: center;">
+    <i class="fab fa-github fa-3x"></i><br>
+    <span>GitHub Repository</span>
+  </a>
+
+</div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/simulation.gif" title="example simulation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Example simulation.
 </div>
+
+---
+
+## **Abstract**
+This project presents a novel framework for mobile robot navigation in dynamic environments using Deep Reinforcement Learning (DRL). The framework employs the [TD7](https://arxiv.org/abs/2306.02451) algorithm, an augmentation of the TD3 algorithm, with state-action embeddings to predict the next environment state and better model the environemnt dynamics. Simulated in Gazebo and implemented with ROS2, the system was validated across various environments, demonstrating superior adaptability and performance compared to the [baseline method](https://arxiv.org/abs/2103.07119).
+
+---
+
+## **Network Architecture**
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/network-architecture.png" title="network archtecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    To effectively capture dynamic actors in the environment, enabling the policy to make more informed actions, it is essential to predict the next state of the environment accurately. For this purpose, we employ a pair of encoders (state and state-action encoders). 
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+## **Simulation Environment**
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/reset_0.png" title="initial state" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/reset_1.png" title="state after first reset" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/reset_2.png" title="state after second reset" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Upon reset, the positions of the obstacles are randomly altered to enhance generalization, and new starting and target positions are generated randomly.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The framework was tested in Gazebo simulation environments with varying complexity.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/test_env_0.png" title="test environment 1" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/test_env_1.png" title="test environment 2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/test_env_2.png" title="test environment 3" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    We have tested our system in a range of environments that vary in complexity to assess its robustness and effectiveness.
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/slam.gif" title="usage with SLAM toolbox" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    One of the potential application of this framework is exploration. We can use this framework to autonomously navigate in unknown environment and use SLAM frameworks to generate a map of that environment for further application.
+</div>
 
 {% raw %}
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
+```bibtex
+@mastersthesis{Nurye-2024,
+  author = {Nurye, Ahmed Y.},
+  title = {Mobile Robot Navigation in Dynamic Environments},
+  year = {2024},
+  month = oct,
+  school = {Warsaw University of Technology},
+  address = {Warsaw, Poland},
+  number = {WUT4f18e5c2cd214a9cb555f730fa440901},
+  keywords = {Mobile Robot Navigation, Deep Reinforcement Learning, ROS2, Gazebo},
+}
 ```
 
 {% endraw %}
