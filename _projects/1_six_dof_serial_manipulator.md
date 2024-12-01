@@ -11,10 +11,33 @@ giscus_comments: true
 **Authors:** Ahmed Yesuf Nurye, Taye Tsehaye Alamrew, Dilge Vurmaz, Mete Ogulcan Ozduygu  
 **Advisor:** Dr. Pawel Maciąg
 
+<div style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 2rem;">
+
+  <a href="https://github.com/anurye/six-degree-of-freedom-serial-manipulator" target="_blank" style="text-decoration: none; text-align: center;">
+    <i class="fab fa-github fa-3x"></i><br>
+    <span>GitHub Repository</span>
+  </a>
+
+  <a href="https://petercorke.com/toolboxes/robotics-toolbox/" target="_blank" style="text-decoration: none; text-align: center;">
+    <i class="fas fa-tools fa-3x"></i><br>
+    <span>Robotics Toolbox</span>
+  </a>
+
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/project_preview/manipulator_kinematics/pick_and_place.gif" title="example simulation" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Example simulation.
+</div>
+
 ---
 
 ## **Abstract**
-This project presents the design and implementation of a six-degree-of-freedom serial manipulator with a spherical wrist configuration. An analytical solution to the inverse kinematics problem was developed to ensure precise and computationally efficient trajectory planning in both joint and task spaces. The manipulator's capabilities were validated through simulation and successful hardware demonstrations, including real-time pick-and-place tasks. This work highlights the practicality of analytical methods in achieving precise and time-sensitive robotic control.
+This project presents the design and implementation of a six-degree-of-freedom serial manipulator with a spherical wrist configuration. An analytical solution to the inverse kinematics problem was developed to ensure precise and computationally efficient trajectory planning in both joint and task spaces. The manipulator's capabilities were validated through simulation and successful hardware demonstrations, including real-time pick-and-place tasks.
 
 ---
 
@@ -83,28 +106,6 @@ The manipulator’s kinematic configuration and workspace are visualized below:
 </div>
 
 ---
-
-### **Future Work**
-- Explore dynamics-based control to improve motion accuracy under varying loads.
-- Incorporate machine learning for adaptive trajectory optimization in dynamic environments.
-
----
-
-## **Resources**
-
-<div style="display: flex; justify-content: center; gap: 2rem; align-items: center;">
-
-<a href="https://github.com/anurye/six-degree-of-freedom-serial-manipulator" target="_blank" style="text-decoration: none; text-align: center;">
-  <i class="fab fa-github fa-3x"></i><br>
-  <span>GitHub Repository</span>
-</a>
-
-<a href="https://petercorke.com/toolboxes/robotics-toolbox/" target="_blank" style="text-decoration: none; text-align: center;">
-  <i class="fas fa-tools fa-3x"></i><br>
-  <span>Robotics Toolbox</span>
-</a>
-
-</div>
 
 ## **Further Reading**
 For foundational concepts in robotics, refer to the following textbook:
