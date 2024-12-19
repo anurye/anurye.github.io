@@ -37,24 +37,30 @@ giscus_comments: true
 ---
 
 ## **Abstract**
+
 This project presents the design and implementation of a six-degree-of-freedom serial manipulator with a spherical wrist configuration. An analytical solution to the inverse kinematics problem was developed to ensure precise and computationally efficient trajectory planning in both joint and task spaces. The manipulator's capabilities were validated through simulation and successful hardware demonstrations, including real-time pick-and-place tasks.
 
 ---
 
 ## **Introduction**
+
 The aim was to:
+
 1. Model the 6-DoF manipulator kinematics analytically.
 2. Implement trajectory planning in joint and task space.
 3. Test and validate the kinematic model in both simulated and real environments.
 
 Key challenges:
+
 - **Managing singularities during inverse kinematics:** Singularities were addressed by analyzing the Jacobian and excluding configurations leading to rank deficiency.
 - **Synchronizing multi-joint trajectories for smooth motion:** This was critical for ensuring the manipulator's accuracy and efficiency during real-time tasks.
 
 ---
 
 ## **Methods**
+
 ### **Kinematic Analysis**
+
 - **Modified DH Parameters:** Used for frame assignments and transformations.
 - **Singularities:** Identified via Jacobian analysis; configurations causing rank deficiency were excluded.
 
@@ -69,15 +75,17 @@ The manipulator’s kinematic configuration and workspace are visualized below:
     Manipulator in Home Configuration (MATLAB Visualization using Peter Corke’s Robotics Toolbox).
 </div>
 
-
 ### **Trajectory Planning**
+
 - **Joint Space (LSPB):** Smooth transitions with synchronized joint movements.
 - **Task Space:** Linear interpolation was used to achieve precise straight-line end-effector motion during the approach and retraction phases of the pick-and-place task.
 
 ---
 
 ## **Results**
+
 ### **Simulation**
+
 - **Accuracy:** Both forward and inverse kinematics passed MATLAB validation against the Robotics Toolbox with a tolerance of MATLAB’s single-precision floating-point limit (`eps('single')`).
 - **Trajectory Planning:** Pick-and-place tasks were executed using synchronized joint trajectories.
 
@@ -91,6 +99,7 @@ The manipulator’s kinematic configuration and workspace are visualized below:
 </div>
 
 ### **Hardware Implementation**
+
 - **Setup:** Dynamixel servos were configured using MATLAB scripts to ensure precise communication and control of joint motions.
 - **Outcome:** The hardware implementation successfully replicated the pick-and-place task.
 
@@ -108,7 +117,7 @@ The manipulator’s kinematic configuration and workspace are visualized below:
 ---
 
 ## **Further Reading**
+
 For foundational concepts in robotics, refer to the following textbook:
 
-- John J. Craig. *Introduction to Robotics: Mechanics and Control*. 4th Edition, Pearson, 2018.
-
+- John J. Craig. _Introduction to Robotics: Mechanics and Control_. 4th Edition, Pearson, 2018.

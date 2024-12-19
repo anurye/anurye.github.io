@@ -37,6 +37,7 @@ giscus_comments: true
 ---
 
 ## **Abstract**
+
 This project presents a novel framework for mobile robot navigation in dynamic environments using Deep Reinforcement Learning (DRL). The framework employs the [TD7](https://arxiv.org/abs/2306.02451) algorithm, an augmentation of the TD3 algorithm, with state-action embeddings to predict the next environment state and better model the environemnt dynamics. Simulated in Gazebo and implemented with ROS2, the system was validated across various environments, demonstrating superior adaptability and performance compared to the [baseline method](https://arxiv.org/abs/2103.07119).
 
 ---
@@ -55,6 +56,7 @@ This project presents a novel framework for mobile robot navigation in dynamic e
 ---
 
 ## **Simulation Environment**
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/project_preview/msc_thesis/reset_0.png" title="initial state" class="img-fluid rounded z-depth-1" %}
