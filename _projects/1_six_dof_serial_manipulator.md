@@ -38,7 +38,7 @@ giscus_comments: true
 
 ## **Abstract**
 
-This project presents the design and implementation of a six-degree-of-freedom serial manipulator with a spherical wrist configuration. An analytical solution to the inverse kinematics problem was developed to ensure precise and computationally efficient trajectory planning in both joint and task spaces. The manipulator's capabilities were validated through simulation and successful hardware demonstrations, including real-time pick-and-place tasks.
+This project presents the design and implementation of a six-degree-of-freedom serial manipulator with a spherical wrist configuration. An analytical solution to the inverse kinematics problem was developed to ensure precise and computationally efficient trajectory planning in both joint and task spaces. The manipulator's capabilities were validated through simulation and hardware demonstration for pick and place tasks.
 
 ---
 
@@ -46,14 +46,9 @@ This project presents the design and implementation of a six-degree-of-freedom s
 
 The aim was to:
 
-1. Model the 6-DoF manipulator kinematics analytically.
+1. Derive the analytical solution to the kinematic problem.
 2. Implement trajectory planning in joint and task space.
-3. Test and validate the kinematic model in both simulated and real environments.
-
-Key challenges:
-
-- **Managing singularities during inverse kinematics:** Singularities were addressed by analyzing the Jacobian and excluding configurations leading to rank deficiency.
-- **Synchronizing multi-joint trajectories for smooth motion:** This was critical for ensuring the manipulator's accuracy and efficiency during real-time tasks.
+3. Test and validate the solution in both simulated and real environments.
 
 ---
 
@@ -62,9 +57,9 @@ Key challenges:
 ### **Kinematic Analysis**
 
 - **Modified DH Parameters:** Used for frame assignments and transformations.
-- **Singularities:** Identified via Jacobian analysis; configurations causing rank deficiency were excluded.
+- **Singularities:** Identified via geometric Jacobian analysis.
 
-The manipulator’s kinematic configuration and workspace are visualized below:
+The manipulator's kinematic configuration is visualized below:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -120,4 +115,4 @@ The manipulator’s kinematic configuration and workspace are visualized below:
 
 For foundational concepts in robotics, refer to the following textbook:
 
-- John J. Craig. _Introduction to Robotics: Mechanics and Control_. 4th Edition, Pearson, 2018.
+- John J. Craig. Introduction to Robotics: Mechanics and Control 4th Edition, Pearson, 2018.

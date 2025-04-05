@@ -38,9 +38,9 @@ giscus_comments: true
 
 ## **Abstract**
 
-This project presents a novel framework for mobile robot navigation in dynamic environments using Deep Reinforcement Learning (DRL). The framework employs the [TD7](https://arxiv.org/abs/2306.02451) algorithm, an augmentation of the TD3 algorithm, with state-action embeddings to predict the next environment state and better model the environemnt dynamics. Simulated in Gazebo and implemented with ROS2, the system was validated across various environments, demonstrating superior adaptability and performance compared to the [baseline method](https://arxiv.org/abs/2103.07119).
+We present a framework for mobile robot navigation in dynamic environments using Deep Reinforcement Learning (DRL) and the Robot Operating System (ROS). Traditional navigation methods often lack the real-time adaptability required in highly dynamic settings. To address this, we leverage the [TD7](https://arxiv.org/abs/2306.02451) algorithm---an extension of the Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm incorporating state and state-action embeddings---to directly map raw sensor inputs to control actions. These embeddings, trained to minimize the mean squared error (MSE) between the encoded state-action representation and the transition-predicted next state, enhance the system's ability to model environment dynamics and improve navigation performance.
 
----
+Extensive simulations were conducted in custom Gazebo environments of increasing complexity, ranging from open spaces to scenarios with static obstacles and moving actors. Performance was evaluated based on navigation success rate, time to goal, path efficiency, and collision rate. Results indicate that this approach consistently improves navigation performance, particularly in highly dynamic environments.
 
 ## **Network Architecture**
 
@@ -50,7 +50,7 @@ This project presents a novel framework for mobile robot navigation in dynamic e
     </div>
 </div>
 <div class="caption">
-    To effectively capture dynamic actors in the environment, enabling the policy to make more informed actions, it is essential to predict the next state of the environment accurately. For this purpose, we employ a pair of encoders (state and state-action encoders). 
+    To effectively capture dynamic actors in the environment, enabling the policy to make more informed actions, it is essential to predict the next state of the environment accurately. For this purpose, a pair of encoders (state and state-action encoders) are used. 
 </div>
 
 ---
@@ -72,7 +72,7 @@ This project presents a novel framework for mobile robot navigation in dynamic e
     Upon reset, the positions of the obstacles are randomly altered to enhance generalization, and new starting and target positions are generated randomly.
 </div>
 
-The framework was tested in Gazebo simulation environments with varying complexity.
+The framework was tested in Gazebo simulation environments with increasing level of complexity.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

@@ -38,6 +38,6 @@ giscus_comments: true
 
 ## **Abstract**
 
-To address scalability challenges in joint-coordinate methods for complex mechanisms, this project developed an alternative approach based on absolute coordinates, localizing constraint equations to individual joints. The solver employs the Newton-Raphson method to solve the nonlinear constraint equations for position and uses the Jacobian matrix to compute velocities and accelerations. This method is scalable, computationally efficient, and supports general planar mechanisms with an arbitrary number of links.
+To address scalability challenges in joint-coordinate methods for complex mechanisms, we developed an alternative approach based on absolute coordinates. Absolute coordinates localize the constraint equations to individual joints, resulting in inherently sparse constraint and Jacobian matrices that are computationally efficient to solve. The solver employs the Newton-Raphson method to solve the nonlinear constraint equations for position and uses the Jacobian matrix to compute the velocities and accelerations of any point on the bodies of the mechanism.
 
 ---

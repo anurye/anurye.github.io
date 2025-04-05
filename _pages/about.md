@@ -24,12 +24,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Systems Engineer at [Northvolt](https://northvolt.com/), where I develop algorithms for battery management systems.  
-I earned my M.Sc. in Robotics from the [Warsaw University of Technology](https://eng.pw.edu.pl/) in October 2024. My [thesis](https://anurye.github.io/projects/1_drl_dynamic_navigation/), supervised by [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska), focused on mobile robot navigation in dynamic environments using deep reinforcement learning.  
-Before that, I received my B.Sc. in Electrical Engineering from [Addis Ababa Science and Technology University](http://www.aastu.edu.et/) in September 2021.
+I am currently a Systems Engineer at [Northvolt](https://northvolt.com/), working on algorithms for battery management systems.  
+Previously, I earned my M.Sc. in Robotics (with honors) from [Warsaw University of Technology](https://eng.pw.edu.pl/), where I was supervised by [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska). For my [master's thesis](https://github.com/anurye/Mobile-Robot-Navigation-Using-Deep-Reinforcement-Learning-and-ROS), I explored deep reinforcement learning techniques to improve the navigation performance of mobile robots in dynamic environments. Before that, I completed my undergraduate studies (with honors) in Electrical Engineering at [Addis Ababa Science and Technology University](http://www.aastu.edu.et/) in Ethiopia.
 
-**Research Interests:**
+**Research Keywords:**
 
 - Human-Robot Interaction
-- Social Robotics
-- Reinforcement Learning
+- Mathematical Human Modeling
+- Bayesian Inference
+- Inverse Reinforcement Learning
