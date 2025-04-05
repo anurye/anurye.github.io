@@ -51,21 +51,6 @@ ninja.data = [{
           description: "kinematic analysis of a general case planar multi-body system using absolute coordinates",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_kinematics_of_multi-body_system/";
-            },},{id: "projects-openstreemap-route-planner",
-          title: 'OpenStreeMap Route Planner',
-          description: "Shortest path planning on OpenStreetMap using A* algorithm.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_route_planner/";
-            },},{id: "projects-wavefront",
-          title: 'Wavefront',
-          description: "Global path planning with the wavefront algorithm.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_wavefront/";
-            },},{id: "projects-bug2",
-          title: 'Bug2',
-          description: "Local obstacle avoidance using the Bug2 algorithm.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_bug2/";
             },},{
         id: 'social-email',
         title: 'email',
