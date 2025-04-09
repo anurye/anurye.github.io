@@ -30,7 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-i-started-a-new-position-as-a-systems-engineer-at-northvolt",
+        },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-i-started-a-new-position-as-a-systems-engineer-at-northvolt",
           title: 'I started a new position as a Systems Engineer at Northvolt.',
           description: "",
           section: "News",},{id: "news-successfully-defended-my-m-sc-thesis-today-tada",
