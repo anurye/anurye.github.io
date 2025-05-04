@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://northvolt.com/'>Systems Engineer at Northvolt</a>.
+subtitle: <a href='https://www.scania.com/group/en/home.html'>Systems Engineer at Scania Group</a>.
 
 profile:
   align: right
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a Systems Engineer at [Northvolt](https://northvolt.com/), working on algorithms for battery management systems.  
+I am currently a Systems Engineer at [Scania Group](https://www.scania.com/group/en/home.html), working on algorithms for battery management systems.
 Previously, I earned my M.Sc. in Robotics (with honors) from [Warsaw University of Technology](https://eng.pw.edu.pl/), where I was supervised by [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska). For my [master's thesis](https://github.com/anurye/Mobile-Robot-Navigation-Using-Deep-Reinforcement-Learning-and-ROS), I explored deep reinforcement learning techniques to improve the navigation performance of mobile robots in dynamic environments. Before that, I completed my undergraduate studies (with honors) in Electrical Engineering at [Addis Ababa Science and Technology University](http://www.aastu.edu.et/) in Ethiopia.
 
 **Research Keywords:**
