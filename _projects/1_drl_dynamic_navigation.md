@@ -1,21 +1,23 @@
 ---
 layout: page
 title: Mobile Robot Navigation in Dynamic Environments
-description: Deep Reinforcement Learning for dynamic robot navigation
 img: assets/img/project_preview/msc_thesis/network-architecture.png
 importance: 3
 category: Navigation
 giscus_comments: true
 ---
 
-**Author:** Ahmed Yesuf Nurye  
-**Advisor:** [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska)
+<div style="text-align: center; margin-bottom: 1.5rem;">
+  <a href="https://anurye.github.io/" target="_blank">Ahmed Yesuf Nurye</a><sup>1</sup>, <a href="https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska" target="_blank">Elżbieta Jarzębowska</a><sup>1</sup><br>
+  
+  <small><sup>1</sup> Warsaw University of Technology</small>
+</div>
 
 <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 2rem;">
 
-  <a href="/assets/pdf/Mobile_Robot_Navigation_in_Dynamic_Environments.pdf" target="_blank" style="text-decoration: none; text-align: center;">
+  <a href="/assets/pdf/MMAR_2025.pdf" target="_blank" style="text-decoration: none; text-align: center;">
     <i class="fas fa-file-pdf fa-3x"></i><br>
-    <span>Read Thesis</span>
+    <span>Read Paper</span>
   </a>
 
   <a href="https://github.com/anurye/Mobile-Robot-Navigation-Using-Deep-Reinforcement-Learning-and-ROS" target="_blank" style="text-decoration: none; text-align: center;">
@@ -101,15 +103,11 @@ The framework was tested in Gazebo simulation environments with increasing level
 {% raw %}
 
 ```bibtex
-@mastersthesis{Nurye-2024,
-  author = {Nurye, Ahmed Y.},
-  title = {Mobile Robot Navigation in Dynamic Environments},
-  year = {2024},
-  month = oct,
-  school = {Warsaw University of Technology},
-  address = {Warsaw, Poland},
-  number = {WUT4f18e5c2cd214a9cb555f730fa440901},
-  keywords = {Mobile Robot Navigation, Deep Reinforcement Learning, ROS2, Gazebo},
+@INPROCEEDINGS{nurye2025,
+author={Nurye, Ahmed Yesuf and Jarzebowska, Elzbieta},
+booktitle={2025 29th International Conference on Methods and Models in Automation and Robotics (MMAR)},
+title={Deep Reinforcement Learning for Mobile Robot Navigation in Dynamic Environments},
+year={2025}
 }
 ```
 
