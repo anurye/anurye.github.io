@@ -41,9 +41,12 @@ ninja.data = [{
           section: "News",},{id: "news-successfully-defended-my-m-sc-thesis-today-tada",
           title: 'Successfully defended my M.Sc. thesis today! :tada:',
           description: "",
+          section: "News",},{id: "news-our-paper-on-deep-reinforcement-learning-for-mobile-robot-navigation-in-dynamic-environments-has-been-accepted-to-mmar-2025",
+          title: 'Our paper on deep reinforcement learning for mobile robot navigation in dynamic environments...',
+          description: "",
           section: "News",},{id: "projects-mobile-robot-navigation-in-dynamic-environments",
           title: 'Mobile Robot Navigation in Dynamic Environments',
-          description: "Deep Reinforcement Learning for dynamic robot navigation",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_drl_dynamic_navigation/";
             },},{id: "projects-six-degree-of-freedom-serial-manipulator",
