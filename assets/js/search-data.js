@@ -54,9 +54,14 @@ ninja.data = [{
           description: "analytical inverse kinematics solution, trajectory planning, testing",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_six_dof_serial_manipulator/";
+            },},{id: "projects-gym-turtlebot",
+          title: 'gym-turtlebot',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_gym_turtlebot/";
             },},{id: "projects-kinematics-of-multi-body-system",
           title: 'Kinematics of Multi-body System',
-          description: "kinematic analysis of a general case planar multi-body system using absolute coordinates",
+          description: "A ROS2 and Gazebo based gymnasium environment for Turtlebot4",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_kinematics_of_multi-body_system/";
             },},{
