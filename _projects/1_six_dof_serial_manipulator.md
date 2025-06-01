@@ -3,7 +3,7 @@ layout: page
 title: Six Degree of Freedom Serial Manipulator
 description: analytical inverse kinematics solution, trajectory planning, testing
 img: assets/img/project_preview/manipulator_kinematics/six_dof_manipulator_matlab.png
-importance: 2
+importance: 1
 category: Kinematics
 giscus_comments: true
 ---

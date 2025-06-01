@@ -2,7 +2,7 @@
 layout: page
 title: Mobile Robot Navigation in Dynamic Environments
 img: assets/img/project_preview/msc_thesis/network-architecture.png
-importance: 3
+importance: 1
 category: Navigation
 giscus_comments: true
 ---
