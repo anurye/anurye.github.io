@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kinematics of Multi-body System
-description: A ROS2 and Gazebo based gymnasium environment for Turtlebot4
+description: kinematic analysis of a general case planar multi-body system using absolute coordinates
 img: assets/img/project_preview/multibody_kinematics/mechanism.png
 importance: 2
 category: Kinematics
