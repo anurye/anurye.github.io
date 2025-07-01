@@ -40,9 +40,24 @@ giscus_comments: true
 
 ## **Abstract**
 
-We present a framework for mobile robot navigation in dynamic environments using Deep Reinforcement Learning (DRL) and the Robot Operating System (ROS). Traditional navigation methods often lack the real-time adaptability required in highly dynamic settings. To address this, we leverage the [TD7](https://arxiv.org/abs/2306.02451) algorithm---an extension of the Twin Delayed Deep Deterministic Policy Gradient (TD3) algorithm incorporating state and state-action embeddings---to directly map raw sensor inputs to control actions. These embeddings, trained to minimize the mean squared error (MSE) between the encoded state-action representation and the transition-predicted next state, enhance the system's ability to model environment dynamics and improve navigation performance.
+This paper presents a framework for mobile robot navigation in dynamic environments using
+deep reinforcement learning (DRL) and the Robot Operating System (ROS).
+The framework enables proactive adaptation to environmental changes.
+Traditional navigation methods typically assume a static environment and treat moving obstacles as
+outliers during mapping and localization. This assumption severely limits the robustness of these
+methods in highly dynamic settings such as homes, hospitals, and other public spaces. To overcome
+this limitation, we employ encoder networks that jointly learns state and state–action
+representations by minimizing the mean squared error (MSE) between predicted and actual next-state embeddings.
+This approach explicitly captures the environment’s transition dynamics, enabling the robot to
+anticipate and effectively navigate around moving obstacles.
 
-Extensive simulations were conducted in custom Gazebo environments of increasing complexity, ranging from open spaces to scenarios with static obstacles and moving actors. Performance was evaluated based on navigation success rate, time to goal, path efficiency, and collision rate. Results indicate that this approach consistently improves navigation performance, particularly in highly dynamic environments.
+We evaluate the proposed framework through extensive simulations in custom Gazebo worlds of
+increasing complexity,ranging from open spaces to scenarios with densely populated static obstacles
+and moving actors. We assess performance in terms of success rate, time to goal, path efficiency, and
+collision rate. Results demonstrate that our approach consistently improves navigation performance,
+particularly in highly dynamic environments.
+
+---
 
 ## **Network Architecture**
 
