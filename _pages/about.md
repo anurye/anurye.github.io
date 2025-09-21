@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: |
+  <a href='https://vu.nl/en'>Vrije Universiteit Amsterdam</a><br>
+  <a href='https://socialai.nl/'>Social AI Group</a><br>
+  De Boelelaan 1111 (NU building), 1081 HV Amsterdam
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info:
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +22,15 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am an incoming PhD student in Computer Science at [Vrije Universiteit Amsterdam](https://vu.nl/en), co-advised by [Kim Baraka](http://kimbaraka.com/) and [Herke van Hoof](https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/) (University of Amsterdam). My research is centered around interactive robot learning. Specifically, I study how robots can learn from multimodal feedback at various levels of abstraction and reason about their learning needs to actively request the right type of feedback at the right time.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Previously, I was a systems engineer at [Scania Group](https://www.scania.com/group/en/home.html), developing algorithms for battery management systems. Before that, I obtained my MSc in Robotics from [Warsaw University of Technology](https://eng.pw.edu.pl/), where I was advised by [Prof. Elżbieta Jarzębowska](https://www.meil.pw.edu.pl/daas/DAAS2/People/Elzbieta-Jarzebowska). Earlier, I completed my undergraduate studies in Electrical Engineering at [Addis Ababa Science and Technology University](http://www.aastu.edu.et/) in Ethiopia.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**Research Interests:** Human-Robot Interaction, Interactive Robot Learning, Mathematical Human Modeling, Reinforcement Learning
+
+[Email](mailto:anurye.yesuf@gmail.com) / [Google Scholar](https://scholar.google.com/citations?user=q5zWF44AAAAJ) / [GitHub](https://github.com/anurye) / [CV](assets/pdf/cv_ayn.pdf)
