@@ -25,12 +25,15 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-on-deep-reinforcement-learning-for-mobile-robot-navigation-in-dynamic-environments-has-been-accepted-to-mmar-2025",
           title: 'Our paper on deep reinforcement learning for mobile robot navigation in dynamic environments...',
           description: "",
+          section: "News",},{id: "news-i-joined-the-social-ai-group-at-vu-amsterdam-as-a-phd-candidate-under-the-guidance-of-prof-kim-baraka-and-prof-herke-van-hoof-uva",
+          title: 'I joined the Social AI Group at VU Amsterdam as a PhD candidate...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%61%6E%75%72%79%65.%79%65%73%75%66@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+          window.open("mailto:%61.%79.%6E%75%72%79%65@%76%75.%6E%6C", "_blank");
         },
       },{
         id: 'social-github',
