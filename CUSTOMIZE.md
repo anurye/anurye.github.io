@@ -3,6 +3,37 @@
 Here we will give you some tips on how to customize the website. One important thing to note is that **ALL** the changes you make should be done on the **main** branch of your repository. The `gh-pages` branch is automatically overwritten every time you make a change to the main branch.
 
 <!--ts-->
+
+- [Customize](#customize)
+  - [Project structure](#project-structure)
+  - [Configuration](#configuration)
+  - [Modifying the CV information](#modifying-the-cv-information)
+  - [Modifying the user and repository information](#modifying-the-user-and-repository-information)
+  - [Creating new pages](#creating-new-pages)
+  - [Creating new blog posts](#creating-new-blog-posts)
+  - [Creating new projects](#creating-new-projects)
+  - [Adding some news](#adding-some-news)
+  - [Adding Collections](#adding-collections)
+  - [Adding a new publication](#adding-a-new-publication)
+    - [Author annotation](#author-annotation)
+    - [Buttons (through custom bibtex keywords)](#buttons-through-custom-bibtex-keywords)
+  - [Changing theme color](#changing-theme-color)
+  - [Adding social media information](#adding-social-media-information)
+  - [Adding a newsletter](#adding-a-newsletter)
+  - [Removing content](#removing-content)
+    - [Removing the blog page](#removing-the-blog-page)
+    - [Removing the news section](#removing-the-news-section)
+    - [Removing the projects page](#removing-the-projects-page)
+    - [Removing the publications page](#removing-the-publications-page)
+    - [Removing the repositories page](#removing-the-repositories-page)
+    - [You can also remove pages through commenting out front-matter blocks](#you-can-also-remove-pages-through-commenting-out-front-matter-blocks)
+  - [Adding Token for Lighthouse Badger](#adding-token-for-lighthouse-badger)
+    - [Personal Access Token (fine-grained) Permissions for Lighthouse Badger:](#personal-access-token-fine-grained-permissions-for-lighthouse-badger)
+  - [Customizing fonts, spacing, and more](#customizing-fonts-spacing-and-more)
+  - [Scheduled Posts](#scheduled-posts)
+    - [Name Format](#name-format)
+    - [Important Notes](#important-notes)
+
 <!--te-->
 
 ## Project structure
@@ -247,6 +278,28 @@ To remove the repositories, you can:
 
 - delete the repositories page [\_pages/repositories.md](_pages/repositories.md)
 - delete [\_includes/repository/](_includes/repository/) directory
+
+### You can also remove pages through commenting out front-matter blocks
+
+For `.md` files in [\pages](pages/) directory, if you do not want to completely edit or delete them but save for later use, you can temporarily disable these variables. But be aware that Jekyll only recognizes front matter when it appears as uncommented. The layout, permalink, and other front-matter behavior are disabled for that file.
+
+For example, books.md do:
+
+```md
+<!-- ---
+layout: book-shelf
+title: bookshelf
+permalink: /books/
+nav: true
+collection: books
+--- -->
+
+> What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
+>
+> -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
+
+## Books that I am reading, have read, or will read
+```
 
 ## Adding Token for Lighthouse Badger
 
