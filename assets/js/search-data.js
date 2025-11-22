@@ -29,6 +29,13 @@ ninja.data = [{
           title: 'I joined the Social AI Group at VU Amsterdam as a PhD candidate...',
           description: "",
           section: "News",},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
