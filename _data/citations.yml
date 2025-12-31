@@ -1,10 +1,6 @@
 metadata:
-  last_updated: '2025-11-26'
+  last_updated: '2025-12-31'
 papers:
-  q5zWF44AAAAJ:IWHjjKOFINEC:
-    citations: 0
-    title: Mobile Robot Navigation in Dynamic Environments
-    year: '2024'
   q5zWF44AAAAJ:qUcmZB5y_30C:
     citations: 0
     title: Deep Reinforcement Learning for Mobile Robot Navigation in Dynamic Environments
