@@ -96,7 +96,7 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: false
+search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
@@ -173,16 +173,16 @@ disqus_shortname: # put your disqus shortname
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+  # - name: medium.com
+  #   rss_url: https://medium.com/@al-folio/feed
+  #   categories: [external-posts]
+  #   tags: [medium]
+  # - name: Google Blog
+  #   posts:
+  #     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+  #       published_date: 2024-05-14
+  #   categories: [external-posts]
+  #   tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -254,6 +254,11 @@ exclude:
   - _pages/publications.md
   - _pages/repositories.md
   - _pages/teaching.md
+  - _books/
+  - _posts/
+  - _projects/
+  - _teachings/
+  - _news/announcement_*.md
   - purgecss.config.js
   - README.md
   - readme_preview/

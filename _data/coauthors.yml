@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"baraka":
+  - firstname: ["Kim", "K."]
+    url: https://kimbaraka.com
+
+"van hoof":
+  - firstname: ["Herke", "H."]
+    url: "https://staff.fnwi.uva.nl/h.c.vanhoof/homepage/"
