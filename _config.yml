@@ -43,7 +43,7 @@ protect_email: true
 # point external_services.github_profile_trophy_url at your instance, then set
 # enabled: true. See docs/CUSTOMIZE.md.
 repo_trophies:
-  enabled: false
+  enabled: true
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -252,7 +252,7 @@ exclude:
   - _pages/profiles.md
   - _pages/projects.md
   - _pages/publications.md
-  - _pages/repositories.md
+  # - _pages/repositories.md
   - _pages/teaching.md
   - _books/
   - _posts/
