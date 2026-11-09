@@ -190,7 +190,7 @@ external_sources:
 
 newsletter:
   enabled: true
-  endpoint: https://app.loops.so/api/newsletter-form/cmw8ryd6d2hk40jypkzfbhzk1 # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  endpoint: cmw8ryd6d2hk40jypkzfbhzk1 # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
